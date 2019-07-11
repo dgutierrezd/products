@@ -3,7 +3,7 @@ import {MOSTRAR_PRODUCTOS, EDITAR_PRODUCTO, MOSTRAR_PRODUCTO, ELIMINAR_PRODUCTO,
 import axios from 'axios';
 
 export const mostrarProductos = () => async dispatch => {
-    const respuesta = await axios.get('http://localhost:4000/productos');
+    const respuesta = await axios.get('https://my-json-server.typicode.com/dgutierrezd/products/productos');
     dispatch({
         type: MOSTRAR_PRODUCTOS,
         payload: respuesta.data
@@ -11,7 +11,7 @@ export const mostrarProductos = () => async dispatch => {
 }
 
 export const mostrarProducto = id => async dispatch => {
-    const respuesta = await axios.get(`http://localhost:4000/productos/${id}`)
+    const respuesta = await axios.get(`https://my-json-server.typicode.com/dgutierrezd/products/productos/${id}`)
     
     dispatch({
         type: MOSTRAR_PRODUCTO,
@@ -20,7 +20,7 @@ export const mostrarProducto = id => async dispatch => {
 }
 
 export const borrarProducto = id => async dispatch => {
-    await axios.delete(`http://localhost:4000/productos/${id}`)
+    await axios.delete(`https://my-json-server.typicode.com/dgutierrezd/products/productos/${id}`)
 
     dispatch({
         type:ELIMINAR_PRODUCTO,
@@ -29,7 +29,7 @@ export const borrarProducto = id => async dispatch => {
 }
 
 export const agregarProducto = producto => async dispatch => {
-    const respuesta = await axios.post('http://localhost:4000/productos', producto);
+    const respuesta = await axios.post('https://my-json-server.typicode.com/dgutierrezd/products/productos', producto);
     
     dispatch({
         type: AGREGAR_PRODUCTO,
@@ -38,7 +38,7 @@ export const agregarProducto = producto => async dispatch => {
 }
 
 export const editarProducto = producto => async dispatch => {
-    const respuesta = await axios.put(`http://localhost:4000/productos/${producto.id}`, producto);
+    const respuesta = await axios.put(`https://my-json-server.typicode.com/dgutierrezd/products/productos/${producto.id}`, producto);
 
     dispatch({
         type: EDITAR_PRODUCTO,
