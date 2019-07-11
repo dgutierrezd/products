@@ -1,0 +1,34 @@
+{
+  "productos": [
+    {
+      "nombre": "Pastel de Zanahoria",
+      "precio": "45",
+      "id": 4
+    },
+    {
+      "nombre": "Pastel de Chocolate",
+      "precio": "60",
+      "id": 5
+    },
+    {
+      "nombre": "Pastel de Fresa",
+      "precio": "40",
+      "id": 6
+    },
+    {
+      "id": 7,
+      "nombre": "Juego de Sandia",
+      "precio": "4000"
+    },
+    {
+      "id": 8,
+      "nombre": "Ensalada de Frutas",
+      "precio": "2500"
+    },
+    {
+      "nombre": "Jugo de Mora",
+      "precio": "34",
+      "id": 9
+    }
+  ]
+}
